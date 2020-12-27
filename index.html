@@ -71,6 +71,50 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hooks" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/27/hooks/" class="article-date">
+  <time class="dt-published" datetime="2020-12-27T12:25:24.000Z" itemprop="datePublished">2020-12-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/12/27/hooks/">hooks</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>一、什么是 React Hook<br>官方回答：Hook 是 React 16.8 的新增特性。它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性。</p>
+<p>从官网的这句话中，我们可以明确的知道，Hook增加了函数式组件中state的使用，我们可以轻松的在函数式组件中维护我们的状态，不需要更改为class组件。</p>
+<p>React16.8 加入 hooks，让 React 函数式组件更加灵活React16.8 ，之前的hock存在的问题，如下：<br>在组件间复用状态逻辑很难<br>复杂组件变得难以理解，高阶组件和函数组件的嵌套过深。（嵌套地狱）<br>难以记忆的生命周期<br>React16.8，为解决这些问题，提供以下几种方法，如下：<br>useState 返回有状态值，以及更新这个状态值的函数<br>useEffect 接受包含命令式，可能有副作用代码的函数。<br>useContext 接受上下文对象（从 React.createContext 返回的值）并返回当前上下文值.<br>useReducer useState 的替代方案。接受类型为(state，action) =&gt; newState 的 reducer，并返回与 dispatch 方法配对的当前状态。<br>useCallback 返回一个回忆的 memoized 版本，该版本仅在其中一个输入发生更改时才会更改。纯函数的输入输出确定性<br>useMemo 纯的一个记忆函数<br>useRef 返回一个可变的 ref 对象，其.current 属性被初始化为传递的参数<br>useImperativeMethods 自定义使用 ref 时公开给父组件的实例值<br>useMutationEffect 更新兄弟组件之前，它在 React 执行其 DOM 改变的同一阶段同步触发<br>useLayoutEffect DOM 改变后同步触发。使用它来从 DOM 读取布局并同步重新渲染</p>
+<p>二、函数组件使用hock之后生命周期与类组件中生命周期的区别<br>class 组件</p>
+<p>constructor<br>getDerivedStateFromProps<br>shouldComponentUpdate<br>render<br>componentDidMount<br>componentDidUpdate<br>componentWillUnmount<br>Hooks组件</p>
+<p>useState<br>useState里面update函数<br>useMemo<br>函数本身<br>useEffect<br>useEffect<br>useEffect里面返回的函数</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/12/27/hooks/" data-id="ckj73yk900001xgv70pgnbky9" data-title="hooks" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="t-TodoList" class="h-entry article article-type-t" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2020/12/26/TodoList/" class="article-date">
@@ -98,46 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/26/TodoList/" data-id="ckj52007z0000vkv70zxgcho5" data-title="TodoList" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hooks" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/12/26/hooks/" class="article-date">
-  <time class="dt-published" datetime="2020-12-26T01:30:24.000Z" itemprop="datePublished">2020-12-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/12/26/hooks/">hooks</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>这是老师留的作业必须得写完</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/26/hooks/" data-id="ckj5200890002vkv70bng6eo1" data-title="hooks" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/12/26/TodoList/" data-id="ckj73yk9c0002xgv7a0bdglmi" data-title="TodoList" class="article-share-link">Share</a>
       
       
       
@@ -184,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/26/hello-world/" data-id="ckj5200850001vkv7dc9x7jj4" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/12/26/hello-world/" data-id="ckj73yk8i0000xgv77qlcda7w" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -227,11 +232,11 @@
       <ul>
         
           <li>
-            <a href="/2020/12/26/TodoList/">TodoList</a>
+            <a href="/2020/12/27/hooks/">hooks</a>
           </li>
         
           <li>
-            <a href="/2020/12/26/hooks/">hooks</a>
+            <a href="/2020/12/26/TodoList/">TodoList</a>
           </li>
         
           <li>
